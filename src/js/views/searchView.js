@@ -3,7 +3,7 @@ class SearchView {
 
     getQuery() {
         const query = this._parentEl.querySelector('.search__field').value;
-        this._clearInput(); 
+        this._clearInput();
         return query;
     }
 
@@ -12,7 +12,7 @@ class SearchView {
     }
 
     addHandlerSearch(handler) {
-        this._parentEl.addEventListener('submit', function(e) {
+        this._parentEl.addEventListener('submit', function (e) {
             e.preventDefault();
             handler();
         })
